@@ -1,0 +1,19 @@
+[buildPlans.iosevka-inaba]                          # <iosevka-custom> is your plan name
+family = "Iosevka Inaba"                            # Font menu family name
+design = ["nolig", "type", "v-tilde-low", "v-asterisk-low", "v-at-short", "v-zero-slashed"] # Customize styles
+
+# Override default building weights
+# When buildPlans.<plan name>.weights is absent
+# All weights would built and mapped to default shape/CSS
+[buildPlans.iosevka-inaba.weights.regular]
+shape = 400                            # Weight for glyph shapes
+menu  = 400                            # Weight for menu name
+css   = 400                            # Weight for webfont CSS
+
+# Override default building slant sets
+# Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
+# When this section is absent, all slants would be built.
+[buildPlans.iosevka-inaba.slants]
+upright = "normal"
+italic = "italic"
+oblique = "oblique"
